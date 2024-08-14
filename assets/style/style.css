@@ -675,14 +675,18 @@ table td{
     .banner-img{
         margin-top: 110px;
         text-align: center;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .banner-img .banner-card1{
         top: 60px;
+        right: -25px;
         padding: 8px 10px;
     }
     .banner-img .banner-card2{
-        left: 10px;
+        left: -70px;
         bottom: 210px;
         padding: 8px 10px;
     }
@@ -723,6 +727,9 @@ table td{
     .exercise-sec {
         margin-top: 80px;
     }
+    .exercise-sec .section-header {
+        margin: 0 0 50px;
+    }
 
     .exercise-row-1 {
         grid-template-columns: 30% 40% 30% 1fr;
@@ -758,6 +765,10 @@ table td{
     }
     
     /* BMI section */
+
+    .bmi .section-header {
+        margin: 0 0 50px;
+    }
 
     .mt-100{
         margin-top: 80px;
@@ -879,6 +890,9 @@ table td{
     .banner-content{
         margin-left: 0;
     }
+    .banner-text br{
+        display: none;
+    }
     .banner-content .banner-title{
         font-size: 42px;
     }
@@ -891,11 +905,18 @@ table td{
 
     .banner-card1 h3, .banner-card2 h3{
         line-height: 1;
-        font-size: 28px;
+        font-size: 27px;
         font-weight: 800;
     }
     .banner-card2 h3{
-        font-size: 21px;
+        font-size: 20px;
+    }
+
+    .banner-img .banner-card1{
+        right: 0px;
+    }
+    .banner-img .banner-card2{
+        left: 10px;
     }
 
     /* Trainer section */
@@ -944,6 +965,11 @@ table td{
     .mt-100{
         margin-top: 60px;
     }
+
+    .bmi-form-group .section-subtitle br{
+        display: none;
+    }
+
     .calculate-bmi-form{
         display: block;
     }
