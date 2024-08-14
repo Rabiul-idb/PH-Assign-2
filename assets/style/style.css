@@ -159,6 +159,15 @@ header{
     color: var(--white);
 }
 
+.nav-icon{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 5px 8px;
+    color: var(--white);
+    font-size: 20px;
+    display: none;
+}
+
 /* Banner */
 
 .banner{
@@ -619,7 +628,7 @@ table td{
 }
 
 
-/* Responsive Css ============== */
+/* ============>>>>>>>>>>> Responsive Css ==============>>>>>>>>>>>> */
 
 @media screen and (max-width:992px) {
 
@@ -633,6 +642,9 @@ table td{
     .section-subtitle br{
         display: none;
     }
+
+    /* Header section */
+
     header{
         padding-top: 30px;
     }
@@ -656,16 +668,36 @@ table td{
     .banner-content{
         margin-left: 54px;
     }
+    .banner-text br{
+        display: block;
+    }
+
     .banner-img{
         margin-top: 110px;
         text-align: center;
     }
+
+    .banner-img .banner-card1{
+        top: 60px;
+        padding: 8px 10px;
+    }
+    .banner-img .banner-card2{
+        left: 10px;
+        bottom: 210px;
+        padding: 8px 10px;
+    }
+
+    /* Trainer section */
 
     .trainer-container{
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         max-width: 75%;
         margin: 0 auto;
+    }
+
+    .trainer .section-subtitle br{
+        display: block;
     }
 
     .marathone-trainer{
@@ -683,7 +715,10 @@ table td{
     
     .marathone-trainer-img img{
         height: 100%;
+        width: 100%;
     }
+
+    /* Exercise section  */
 
     .exercise-sec {
         margin-top: 80px;
@@ -722,6 +757,8 @@ table td{
         right: 15px;
     }
     
+    /* BMI section */
+
     .mt-100{
         margin-top: 80px;
     }
@@ -738,6 +775,12 @@ table td{
         margin-top: 30px;
     }
 
+    .bmi-form-group .section-subtitle br{
+        display: block;
+    }
+
+    /* Pricing section */
+
     .pricing-sec {
         margin-top: 80px;
     }
@@ -751,6 +794,8 @@ table td{
         padding: 30px 25px;
         width: 50%;
     }
+
+    /* Team Section  */
 
     .team-sec{
         margin-top: 80px;
@@ -772,10 +817,12 @@ table td{
     }
 
     .team-member-details a{
-        font-size: 14px;
+        font-size: 20px;
         line-height: 1;
         font-weight: 500;
     }
+
+    /* Footer section */
 
     .footer-container{
         grid-template-columns: 1fr;
@@ -795,5 +842,175 @@ table td{
 
     .footer-item.ml-auto{
         margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 575.98px) {
+   
+    .btn-link{
+        font-size: 16px;
+        padding: 10px 25px;
+        width: 180px;
+    }
+    .section-header{
+        width: 100%;
+        margin: 0 0 40px;
+    }
+
+    /* Header Section */
+
+    .fitness-menu{
+        display: none;
+    }
+
+    .nav-icon{
+        display: block;
+    }
+
+    .section-header .section-title{
+        font-size: 32px;
+    }
+
+    .banner{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .banner-content{
+        margin-left: 0;
+    }
+    .banner-content .banner-title{
+        font-size: 42px;
+    }
+    .banner-btns{
+        flex-wrap: wrap;
+    }
+    .banner-img{
+        margin-top: 80px;
+    }
+
+    .banner-card1 h3, .banner-card2 h3{
+        line-height: 1;
+        font-size: 28px;
+        font-weight: 800;
+    }
+    .banner-card2 h3{
+        font-size: 21px;
+    }
+
+    /* Trainer section */
+
+    .trainer-container{
+        grid-template-columns: 1fr;
+    }
+
+    .marathone-trainer{
+        grid-template-columns: 1fr;
+    }
+    .marathone-trainer-content{
+        padding-right: 30px;
+        margin-bottom: 40px;
+    }
+    .marathone-trainer-content h2{
+        font-size: 32px;
+    }
+    .marathone-trainer-content p{
+        margin-bottom: 20px;
+    }
+    .marathone-trainer-content .btn-link{
+        width: 100%;
+    }
+
+    /* Exercise section */
+
+    .d-sm-none{
+        display: none;
+    }
+
+    .exercise-sec {
+        margin-top: 60px;
+    }
+
+    .exercise-row-1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .exercise-row-2 {
+        grid-template-columns: 45% 55% 1fr;
+    }
+
+    /* BMI Section  */
+
+    .mt-100{
+        margin-top: 60px;
+    }
+    .calculate-bmi-form{
+        display: block;
+    }
+    .calculate-bmi-form .btn-link{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    .calculate-bmi-form input, select{
+        width: 46%;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+
+    .activity-factor{
+        width: 94%;
+    }
+
+    /* pricing section  */
+
+    .pricing-sec {
+        margin-top: 60px;
+    }
+
+    .pricing-container{
+       flex-direction: column;
+    }
+
+    .pricing-item{
+
+        padding: 30px 25px;
+        width: fit-content;
+    }
+
+    /* Team Section  */
+
+    .team-sec{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .team-container{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* footer section */
+
+    .footer-logo-item p {
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
+    .footer-logo-item p br{
+        display: none;
+    }
+
+    .footer-item-container{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-item .footer-title{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .footer-item ul li a{
+        font-size: 16px;
     }
 }
