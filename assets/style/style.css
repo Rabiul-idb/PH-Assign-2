@@ -39,6 +39,7 @@ main{
 .container{
     max-width: 1060px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .mt-100{
@@ -47,6 +48,10 @@ main{
 
 a{
     text-decoration: none;
+}
+
+img{
+    max-width: 100%;
 }
 
 .text-center{
@@ -190,7 +195,7 @@ header{
 .banner-img .banner-card1{
     position: absolute;
     top: 120px;
-    right: -60px;
+    right: 0;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(20px);
@@ -208,6 +213,12 @@ header{
     margin-bottom: 3px;
     text-align: left;
 }
+
+.banner-card2 h3{
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
 .banner-card1 span,
 .banner-card2 span{
     font-size: 13px;
@@ -551,7 +562,7 @@ table td{
 
 .footer-container{
     display: grid;
-    grid-template-columns: 50% 25% 25% 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .footer-logo{
@@ -562,6 +573,11 @@ table td{
     line-height: 1.2;
     font-weight: 800;
     color: var(--clr-red);
+}
+
+.footer-item-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .ml-auto{
@@ -600,4 +616,184 @@ table td{
     font-size: 14px;
     font-weight: 400;
     text-align: center;
+}
+
+
+/* Responsive Css ============== */
+
+@media screen and (max-width:992px) {
+
+    .section-header{
+        width: 550px;
+        margin: 0 auto 50px;
+    }
+    .section-header .section-title{
+        font-size: 44px;
+    }
+    .section-subtitle br{
+        display: none;
+    }
+    header{
+        padding-top: 30px;
+    }
+
+    .fitness-menu {
+        gap: 10px;
+    }
+
+    .fitness-menu li{
+        padding: 5px 12px;
+    }
+    .fitness-menu li a{
+        font-size: 16px;
+    }
+
+    .banner{
+        grid-template-columns: 1fr;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .banner-content{
+        margin-left: 54px;
+    }
+    .banner-img{
+        margin-top: 110px;
+        text-align: center;
+    }
+
+    .trainer-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .marathone-trainer{
+        grid-template-columns: 60% 40% 1fr;
+        padding: 20px;
+        margin-top: 80px;
+    }
+
+    .marathone-trainer-content{
+        padding-right: 30px;
+    }
+    .marathone-trainer-content h2{
+        font-size: 36px;
+    }
+    
+    .marathone-trainer-img img{
+        height: 100%;
+    }
+
+    .exercise-sec {
+        margin-top: 80px;
+    }
+
+    .exercise-row-1 {
+        grid-template-columns: 30% 40% 30% 1fr;
+    }
+
+    .exercise-row-2 {
+        grid-template-columns: 40% 30% 30% 1fr;
+    }
+
+    .exer-img p {
+        font-weight: 400;
+    }
+
+    .exer-img .img1{
+        left: 15px;
+        bottom: 15px;
+    }
+    .exer-img .img2{
+        top: 10px;
+        left: 15px;
+    }
+
+    .exer-img .img3,
+    .exer-img .img5,
+    .exer-img .img6{
+        bottom: 10px;
+        left: 15px;
+    }
+
+    .exer-img .img4{
+        top: 10px;
+        right: 15px;
+    }
+    
+    .mt-100{
+        margin-top: 80px;
+    }
+
+    .calculate-bmi-container{
+        grid-template-columns: 1fr;
+    }
+
+    .calculate-bmi-chart{
+        margin-bottom: 50px;
+    }
+
+    table{
+        margin-top: 30px;
+    }
+
+    .pricing-sec {
+        margin-top: 80px;
+    }
+
+    .pricing-container{
+        gap: 30px;
+    }
+
+    .pricing-item{
+
+        padding: 30px 25px;
+        width: 50%;
+    }
+
+    .team-sec{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .team-container{
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .team-container .team-member img{
+        height: 100%;
+    }
+
+    .team-member-details{
+        left: 15px;
+        bottom: 15px;
+    }
+
+    .team-member-details a{
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 500;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo-item p br{
+        display: block;
+    }
+
+    .footer-item-container{
+        margin-top: 40px;
+    }
+
+    .footer-item .footer-title {
+        font-size: 25px;
+    }
+
+    .footer-item.ml-auto{
+        margin-left: 0;
+    }
 }
